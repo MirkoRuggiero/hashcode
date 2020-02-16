@@ -67,9 +67,7 @@ public class PizzaOptimizer {
                         .sum();
 
                 //update max
-                if (score <= maxSlices) {
-                    maxScore = Math.max(score, maxScore);
-                }
+                maxScore = Math.max(score, maxScore);
                 //remove most expensive pizza
                 Map.Entry<Integer, Boolean> entry = menu.entrySet().iterator().next();
                 menu.remove(entry.getKey(), entry.getValue());
