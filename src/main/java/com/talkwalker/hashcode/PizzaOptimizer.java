@@ -10,14 +10,12 @@ import java.util.*;
 
 public class PizzaOptimizer {
 
-
     public static void main(String[] args) {
         Stopwatch stopwatch = Stopwatch.createStarted();
         int totalFinalScore = 0;
         //num of slice - ordered flag
         Map<Integer, Boolean> menu = new TreeMap<>(Comparator.reverseOrder()); //first element = most expensive pizza
 
-        //read file and load menu
         String baseFolder = "/home/mirko/development/google-hashcode/";
         String example1 = "a_example.in";
         String example2 = "b_small.in";
@@ -27,10 +25,9 @@ public class PizzaOptimizer {
 
         List<String> files = ImmutableList.of(example1, example2, example3, example4, example5);
         for (String example : files) {
-
-
             int maxSlices = 0;
             int pizzaTypes = 0;
+            //read file and load menu
             try (BufferedReader br = new BufferedReader(new FileReader(baseFolder + example))) {
                 boolean first = true;
                 String line;
@@ -52,8 +49,7 @@ public class PizzaOptimizer {
                 e.printStackTrace();
             }
 
-
-            //algorithm
+            //start algorithm
             int maxScore = 0;
             while (!menu.isEmpty()) {
                 int slicesLeft = maxSlices;
