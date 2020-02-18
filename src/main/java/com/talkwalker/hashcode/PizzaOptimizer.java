@@ -2,6 +2,7 @@ package com.talkwalker.hashcode;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.ImmutableList;
+import org.apache.commons.math3.util.CombinatoricsUtils;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
