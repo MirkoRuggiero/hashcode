@@ -1,4 +1,4 @@
-package com.talkwalker.hashcode;
+package com.talkwalker.hashcode.morepizza;
 
 import com.google.common.collect.ImmutableList;
 
